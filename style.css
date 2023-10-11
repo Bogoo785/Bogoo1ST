@@ -3,7 +3,7 @@ footer{
 	font-size:14px;
 	font-weight: 200;
     line-height: 1em;
-	padding: 20px;
+	padding: 50px;
 }
 /* 回到本頁開頭 */
 .pagetop {
@@ -15,4 +15,13 @@ footer{
     border-top: solid 5px #CA5D87;
     text-align: center;
 	padding-top: 20px;
+}
+.colorr{
+    color:#146b40;
+    background-color: rgb(95, 12, 12)919;
+            
+
+}
+#profile{
+    color:palevioletred
 }
