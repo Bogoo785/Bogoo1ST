@@ -29,3 +29,13 @@ footer{
 .size{font-size:25px;
    font-family: 標楷體;
 }
+
+.test{
+    width:200px;
+    color:green;
+}
+
+@media screen and (min-width:600px){
+    .test{width:300px;
+    color:blue}
+}
