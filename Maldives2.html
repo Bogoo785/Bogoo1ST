@@ -3,21 +3,20 @@
 <head>
 <title>Maldives DAY2</title>
 <script>
-    
-    function good(aa){
-    document.getElementById("img").src=""+aa+".jpg"
+function good(){
+    document.getElementById("img").style="position:absolute;left:400px"
     }
-
-
-   
+function   fly(){
+   var a=document.getElementById("aa")
+    a.style.color="red"
+}
 </script>
+
 </head>
 <body>
 
-<button onclick="good(1)">Breakfast Time</button>
-
-
-<button onclick="good(2)">Dinner time</button>
+<button onclick="good()">Breakfast Time</button>
+<button onclick="fly()">Dinner time</button>
 <img src="1.jpg" id="img">
 <div id="aa">good</div>
 
