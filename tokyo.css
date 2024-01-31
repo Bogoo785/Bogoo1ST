@@ -1,5 +1,7 @@
 table,th,td{
     border: 2px solid black;
     width:400px;
-    
 }
+
+.N1{font-size: 18px;
+color:blue}
