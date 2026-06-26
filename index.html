@@ -1,123 +1,124 @@
 <!DOCTYPE html>
 <html lang="zh-Hant-TW">
 <head>
-    <meta charset="utf-8">   <!-- utf-8編碼，中文不會產生亂碼 -->
-    <title>Thai Thai</title>  <!-- 網頁標題 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- 指定螢幕寬度為裝置寬度，畫面載入初始縮放比例100%-->
-    <meta name="description" content="泰國國國國">  <!-- 提供搜尋引擎關於網頁頁面內的重要資訊-->
-    <link rel="stylesheet" href="style.css"> <!-- 連結到style.css-->
+    <meta charset="utf-8">
+    <title>Thai Thai</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="泰國國國國">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="rwd.css?v=20260626">
-    <script src="demo.js" async></script>
+    <script src="demo.js" defer></script>
 </head>
-<body>
-    <a id="top"></a>
-    <header class="global-header">
-        <div class="global-header-inner">
-            <a class="brand" href="Travel.html">Bogoo Travel</a>
-            <nav class="global-nav">
-                <a href="index.html">Thai</a>
-                <a href="Maldives.html">Maldives</a>
-                <a href="Maldives2.html">Maldives Day2</a>
-                <a href="JP.html">Japan</a>
-                <a href="Travel.html">Home</a>
-            </nav>
-        </div>
-    </header>
-
-<<<<<<< HEAD
-        <title>Thai  Thai</title>  <!-- 網頁標題 -->
-        <meta name="viewport" content="width=device-width, initial-scale=0.5"> <!-- 指定螢幕寬度為裝置寬度，畫面載入初始縮放比例100%-->
-        <meta name="description" content="泰國國國國">  <!-- 提供搜尋引擎關於網頁頁面內的重要資訊-->
-        <link rel="stylesheet" href="style.css"> <!-- 連結到style.css-->
-        <script src="demo.js" async>   </script>
-    <button onclick="dont()" style="position: absolute;left:350px;width: 150px;background-color: aquamarine;">不要點</button>
-=======
-    <main class="page-shell content-wrap">
-        <article class="hero-card">
-            <button onclick="dont()" class="dont-btn">不要點</button>
-            <h1 class="title-block">
-                <a href="index.html"><img src="1.jpg" alt="logo" class="title-logo"></a>
-                泰麻里五日遊 12/7 ~ 12/11
-            </h1>
-            <img src="BTS.png" alt="BTS" class="badge-image">
->>>>>>> 9587d52 (good)
-
-            <nav class="navigation">
-                <ul>
-                    <li><a href="https://mimihan.tw/wat-arun/"><button class="nav-btn">鄭王廟</button></a></li>
-                    <li><a href="https://mimihan.tw/wat-pho/"><button class="nav-btn">臥佛寺</button></a></li>
-                    <li><a href="https://www.bring-you.info/zh-tw/grand-palace"><button class="nav-btn">大皇宮＆玉佛寺</button></a></li>
-                    <li><a href="https://kimiyo.tw/nana/"><button class="nav-btn">娜娜廣場</button></a></li>
-                    <li><a href="https://kimiyo.tw/nana/"><button class="nav-btn">JODD夜市</button></a></li>
-                    <li><a href="https://visionthai.net/article/one-day-in-terminal21-asok-shopping-mall/"><button class="nav-btn">T21</button></a></li>
-                    <li><a href="https://www.bring-you.info/zh-tw/iconsiam"><button class="nav-btn">Iconsiam</button></a></li>
-                    <li><a href="https://kimiyo.tw/the-platinum-fashion-mall/"><button class="nav-btn">水門市場</button></a></li>
-                    <li><a href="https://kenji.life/bkk-four-faced-buddha/"><button class="nav-btn">四面佛</button></a></li>
-                </ul>
-            </nav>
-        </article>
-
-        <section class="intro-images">
-            <img src="阿呆.jpg" alt="阿呆" class="hero-image">
-            <img src="哈柏.jpg" alt="哈柏" class="harbor-image" id="harbor" onmousemove="CH()" onmouseleave="CHB()">
-        </section>
-
-        <section class="mainvisual">
-            <img src="國旗.png" alt="國旗" class="flag-image">
-            <img src="temple.png" alt="temple" class="temple-image">
-        </section>
-
-        <article class="itinerary-card">
-            <h2 class="profile-title">DAY1 (12/7)</h2>
-            <div class="day-content day1">1. 17:35 到 BKK<br/>
-                2. 搭電梯到最下層，換錢、搭地鐵<br/>
-                3. 地鐵搭到底站 (PHAYA THAI) 約 26 分鐘，走路 6 分鐘到飯店 (True Siam Phayathai Hotel)<br/>
-                4. 吃晚餐，看成人秀、人妖秀
+<body id="top" class="travel-page">
+    <div class="page-shell">
+        <header class="hero">
+            <div class="hero-copy">
+                <p class="eyebrow">Bangkok Travel Plan</p>
+                <h1 class="colorr">
+                    <a class="brand-mark" href="index.html"><img src="1.jpg" alt="旅遊標誌"></a>
+                    泰麻里五日遊 12/7 ~ 12/11
+                </h1>
+                <p class="hero-text">把寺廟、市集、購物商場和交通路線整理成一張好讀的行程表。</p>
+                <div class="hero-tags">
+                    <span>BTS / MRT</span>
+                    <span>寺廟</span>
+                    <span>夜市</span>
+                    <span>購物</span>
+                </div>
             </div>
-        </article>
-
-        <article class="itinerary-card">
-            <h2 class="profile-title">DAY2 (12/8)</h2>
-            <div class="size day2">
-                1. 鄭王廟 (大概 2~3 小)<br/>
-                交通: BTS 從 Phaya Thai 到 Saphan Taksin，轉船到 N8<br/>
-                泰服: https://bkk.com.tw/wat-arun-thai-costume-for-rent/<br/>
-                2. 搭橫渡船到對面臥佛寺<br/>
-                3. 逛 Iconsiam (可安排午餐到晚餐)<br/>
-                4. 晚餐船<br/>
-                5. 回程: BTS 或船 + BTS 返回 Phaya Thai
+            <div class="hero-visual">
+                <img src="BTS.png" alt="BTS 資訊圖">
             </div>
-        </article>
+        </header>
 
-        <article class="itinerary-card">
-            <h2 class="profile-title">DAY4 (12/10)</h2>
-            <div class="size day4">
-                1. 四面佛<br/>
-                2. BigC、水門市場等商場<br/>
-                <img src="1.png" alt="地圖" class="route-image"><br/>
-                3. 逛到 4 點後可回飯店放東西，再去夜市或看秀
-            </div>
-        </article>
+        <nav class="navigation" aria-label="景點快速連結">
+            <ul>
+                <li><a href="https://mimihan.tw/wat-arun/" target="_blank" rel="noopener noreferrer">鄭王廟</a></li>
+                <li><a href="https://mimihan.tw/wat-pho/" target="_blank" rel="noopener noreferrer">臥佛寺</a></li>
+                <li><a href="https://www.bring-you.info/zh-tw/grand-palace" target="_blank" rel="noopener noreferrer">大皇宮＆玉佛寺</a></li>
+                <li><a href="https://kimiyo.tw/nana/" target="_blank" rel="noopener noreferrer">娜娜廣場</a></li>
+                <li><a href="https://kimiyo.tw/nana/" target="_blank" rel="noopener noreferrer">JODD夜市</a></li>
+                <li><a href="https://visionthai.net/article/one-day-in-terminal21-asok-shopping-mall/" target="_blank" rel="noopener noreferrer">T21</a></li>
+                <li><a href="https://www.bring-you.info/zh-tw/iconsiam" target="_blank" rel="noopener noreferrer">ICONSIAM</a></li>
+                <li><a href="https://kimiyo.tw/the-platinum-fashion-mall/" target="_blank" rel="noopener noreferrer">水門市場</a></li>
+                <li><a href="https://kenji.life/bkk-four-faced-buddha/" target="_blank" rel="noopener noreferrer">四面佛</a></li>
+            </ul>
+        </nav>
 
-        <article class="itinerary-card">
-            <h2 class="profile-title">DAY5 (12/11)</h2>
-            <div class="size day5">
-                18:35 飛機，建議提早 2~3 小時到機場，早上退房後可先去 Terminal 21。<br/>
-                交通: BTS 到 Asok；往機場從 T21 搭 MRT 到 Phetchaburi 轉機場捷運。
-            </div>
-        </article>
+        <main>
+            <section class="gallery-strip" aria-label="旅遊照片">
+                <img src="阿呆.jpg" alt="旅遊照片一">
+                <img src="哈柏.jpg" alt="旅遊照片二" id="harbor" onmousemove="CH()" onmouseleave="CHB()">
+            </section>
+
+            <section class="spotlight">
+                <img src="國旗.png" alt="泰國國旗">
+                <div class="mainvisual">
+                    <a class="temple-link" href="https://mimihan.tw/wat-arun/" target="_blank" rel="noopener noreferrer" aria-label="在新分頁開啟鄭王廟資訊">
+                        <img src="temple.png" alt="寺廟插圖">
+                    </a>
+                </div>
+            </section>
+
+            <section class="itinerary-grid">
+                <article class="day-card">
+                    <h2 class="day-title">DAY1 (12/7)</h2>
+                    <div class="size day-copy day-blue">
+                        1. 17:35 到 BKK<br>
+                        2. 搭電梯到最下層，換錢、搭地鐵<br>
+                        3. 地鐵搭到底站 (PHAYA THAI) 約 26 分鐘，走路 6 分鐘到飯店 (True Siam Phayathai Hotel)，大約快 7 點<br>
+                        4. 吃晚餐，看成人秀、人妖秀
+                    </div>
+                </article>
+
+                <article class="day-card">
+                    <h2 class="day-title">DAY2 (12/8)</h2>
+                    <div class="size day-copy day-navy">
+                        1. 鄭王廟 (大概 2~3 小時)<br>
+                        交通：搭 BTS 從 Phaya Thai 到 Saphan Taksin 2 號出口 (約 30 分鐘，要換線) → 搭船 (藍船) 到 N8 (20 分鐘)<br>
+                        泰服：https://bkk.com.tw/wat-arun-thai-costume-for-rent/<br>
+                        2. 搭橫渡船到對面臥佛寺 (也可以不去)<br>
+                        3. 逛 ICONSIAM (可以來這吃午餐，逛到晚餐時間)<br>
+                        交通：藍船返著搭到 N2<br>
+                        4. 晚餐船<br>
+                        5. 回程<br>
+                        交通：1. 搭 BTS Charoen Nakhon 回 Phaya Thai (轉 2 次車，金 → 綠 → 淺綠)<br>
+                        2. 搭船回中央碼頭，搭 BTS Saphan Taksin 回 Phaya Thai (船 → 地鐵(綠) → 地鐵(淺綠))
+                    </div>
+                </article>
+
+                <article class="day-card">
+                    <h2 class="day-title">DAY4 (12/10)</h2>
+                    <div class="size day-copy day-teal">
+                        1. 四面佛<br>
+                        交通：BTS 坐到 Chit Lom，再走路過去<br>
+                        2. BigC、水門市場…一堆購物商場<br>
+                        <img class="inline-image" src="1.png" alt="購物相關圖片"><br>
+                        3. 大概逛到 4 點，可以先回去放東西，然後看人妖秀或喬德夜市
+                    </div>
+                </article>
+
+                <article class="day-card">
+                    <h2 class="day-title">DAY5 (12/11)</h2>
+                    <div class="size day-copy day-red">
+                        18:35 飛機，有人建議提早 2~3 小時到機場，所以早上退房，Terminal 21 吃飯、逛街，14:30 出發去機場<br>
+                        交通：早上搭 BTS 到 Asok 就到了<br>
+                        往機場：從 T21 搭 MRT 到 Phetchaburi 站轉機場捷運到底
+                    </div>
+                </article>
+            </section>
+
+            <section class="sticker-row" aria-label="裝飾圖片">
+                <img src="wed.jpg" alt="裝飾圖片一">
+                <img src="ball.jpg" alt="裝飾圖片二">
+                <img src="bogoo.jpg" alt="裝飾圖片三">
+            </section>
+        </main>
 
         <footer>
-            <p class="pagetop"><a href="#top">▲回到本頁開頭</a></p>
+            <p class="pagetop"><a href="#top">▲ 回到本頁開頭</a></p>
             <p class="copyright"></p>
         </footer>
-    </main>
-
-    <aside class="side-stickers" aria-hidden="true">
-        <img src="wed.jpg" alt="wed">
-        <img src="ball.jpg" alt="ball">
-        <img src="bogoo.jpg" alt="bogoo">
-    </aside>
+    </div>
 </body>
 </html>
-        
