@@ -1,41 +1,289 @@
-/* 頁尾設定 */
-footer{
-	font-size:14px;
-	font-weight: 200;
-    line-height: 1em;
-	padding: 50px;
+* {
+    box-sizing: border-box;
 }
+
+body {
+    margin: 0;
+    font-family: "Microsoft JhengHei", "PingFang TC", sans-serif;
+    background: linear-gradient(180deg, #fff7f0 0%, #ffffff 35%, #f6fbff 100%);
+    color: #1a2b3c;
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.page-shell {
+    width: min(980px, 100% - 2rem);
+    margin: 0 auto;
+    padding: 1rem 0 2rem;
+}
+
+.dont-btn {
+    width: 150px;
+    background-color: aquamarine;
+    border: 0;
+    border-radius: 12px;
+    padding: 0.65rem 0.8rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.site-header {
+    margin-top: 1rem;
+}
+
+.title-block {
+    margin: 0;
+    border: 5px solid darkorange;
+    padding: 0.9rem;
+    color: #146b40;
+    background-color: #fff0d7;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    font-size: clamp(1.1rem, 2.2vw, 1.8rem);
+}
+
+.title-logo {
+    width: 56px;
+    border-radius: 8px;
+}
+
+.badge-image {
+    width: min(260px, 55vw);
+    margin: 1rem 0;
+}
+
+.navigation ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+}
+
+.nav-btn {
+    color: rgb(40, 169, 202);
+    width: 120px;
+    min-height: 40px;
+    border-radius: 10px;
+    border: 1px solid #5fd4ee;
+    background: #ffffff;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.nav-btn.small {
+    font-size: 0.85rem;
+}
+
+.intro-images {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+    margin-top: 1rem;
+    align-items: start;
+}
+
+.hero-image,
+.harbor-image,
+.route-image,
+.flag-image,
+.temple-image {
+    border-radius: 12px;
+}
+
+main {
+    margin-top: 1.2rem;
+}
+
+.mainvisual {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.temple-image {
+    width: min(220px, 40vw);
+}
+
+.itinerary-card {
+    background: #ffffff;
+    border: 1px solid #e6edf4;
+    border-radius: 14px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+}
+
+.profile-title {
+    color: palevioletred;
+    margin-top: 0;
+}
+
+.size {
+    font-size: clamp(1rem, 2.4vw, 1.35rem);
+    font-family: "DFKai-SB", "BiauKai", serif;
+}
+
+.day-content {
+    font-size: clamp(1rem, 2.2vw, 1.3rem);
+}
+
+.day1 {
+    color: rgb(11, 52, 129);
+}
+
+.day2 {
+    color: blue;
+}
+
+.day4 {
+    color: rgb(20, 192, 192);
+}
+
+.day5 {
+    color: rgb(210, 15, 15);
+}
+
+/* 頁尾設定 */
+footer {
+    font-size: 14px;
+    font-weight: 200;
+    line-height: 1em;
+    padding: 16px 0 0;
+}
+
 /* 回到本頁開頭 */
 .pagetop {
     text-align: right;
-    margin: 1em;
+    margin: 1em 0;
 }
+
 /* 著作權資訊 */
 .copyright {
-    border-top: solid 5px #CA5D87;
+    border-top: solid 5px #ca5d87;
     text-align: center;
-	padding-top: 20px;
-}
-.colorr{
-    color:#146b40;
-    background-color: rgb(95, 12, 12)919;
-            
-
-}
-#profile{
-    color:palevioletred
+    padding-top: 20px;
 }
 
-.size{font-size:25px;
-   font-family: 標楷體;
+.side-stickers {
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 120px;
+    padding: 8px;
 }
 
-.test{
-    width:200px;
-    color:green;
+.side-stickers img {
+    width: 100%;
+    border-radius: 10px;
 }
 
-@media screen and (min-width:600px){
-    .test{width:300px;
-    color:blue}
+.content-wrap {
+    padding-top: 1.2rem;
+}
+
+.page-title {
+    margin: 0 0 1rem;
+    font-size: clamp(1.45rem, 3.5vw, 2.2rem);
+    color: #2155d8;
+}
+
+.grid-links {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.destination-card {
+    text-decoration: none;
+    color: #1a2b3c;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+    transition: transform 0.2s ease;
+}
+
+.destination-card:hover {
+    transform: translateY(-3px);
+}
+
+.destination-card span {
+    display: block;
+    padding: 0.7rem 0.9rem;
+    font-weight: 700;
+}
+
+.photo {
+    width: 100%;
+    height: auto;
+}
+
+.action-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin-bottom: 0.8rem;
+}
+
+.interactive-box {
+    border: 2px dashed #b5d2ff;
+}
+
+.next-link {
+    text-align: right;
+    margin: 0.5rem 0 0;
+}
+
+@media screen and (max-width: 960px) {
+    .side-stickers {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .page-shell {
+        width: min(980px, 100% - 1rem);
+    }
+
+    .title-block {
+        flex-direction: column;
+        align-items: flex-start;
+        line-height: 1.4;
+    }
+
+    .intro-images {
+        grid-template-columns: 1fr;
+    }
+
+    .mainvisual {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-btn {
+        width: 100%;
+        min-width: 110px;
+    }
+
+    .navigation ul li {
+        flex: 1 1 calc(50% - 0.6rem);
+    }
+
+    .grid-links {
+        grid-template-columns: 1fr;
+    }
 }

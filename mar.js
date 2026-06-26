@@ -1,8 +1,18 @@
 function good(aa){
-    document.getElementById("img").src=""+aa+".jpg"
-    };
+    var img = document.getElementById("img");
+    var box = document.getElementById("aa");
+    if (img) {
+        img.src = "" + aa + ".jpg";
+        img.style.width = "min(680px, 100%)";
+    }
+    if (box) {
+        box.style.color = aa === "2" ? "#b91c1c" : "#1f2937";
+    }
+};
 function   fly(){
    var a=document.getElementById("img")
-    a.style.width="500px"
+    if (a) {
+        a.style.width="min(500px, 100%)"
+    }
 }
      

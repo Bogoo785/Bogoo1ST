@@ -2,23 +2,41 @@
 <html>
 <head>
 <title>Maldives DAY2</title>
-<script>
-function good(){
-    document.getElementById("img").style="position:absolute;left:400px"
-    }
-function   fly(){
-   var a=document.getElementById("aa")
-    a.style.color="red"
-}
-</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="rwd.css?v=20260626">
+<script src="mar.js" defer></script>
 
 </head>
 <body>
+<header class="global-header">
+    <div class="global-header-inner">
+        <a class="brand" href="Travel.html">Bogoo Travel</a>
+        <nav class="global-nav">
+            <a href="index.html">Thai</a>
+            <a href="Maldives.html">Maldives</a>
+            <a href="Maldives2.html">Maldives Day2</a>
+            <a href="JP.html">Japan</a>
+            <a href="Travel.html">Home</a>
+        </nav>
+    </div>
+</header>
 
-<button onclick="good()">Breakfast Time</button>
-<button onclick="fly()">Dinner time</button>
-<img src="1.jpg" id="img">
-<div id="aa">good</div>
+<main class="page-shell content-wrap">
+    <h1 class="page-title">Maldives DAY2</h1>
+
+    <div class="action-row">
+        <button onclick="good('1')" class="nav-btn">Breakfast Time</button>
+        <button onclick="good('2')" class="nav-btn">Dinner Time</button>
+        <button onclick="fly()" class="nav-btn">放大照片</button>
+    </div>
+
+    <article class="itinerary-card interactive-box" id="aa">
+        <img src="1.jpg" id="img" alt="Maldives" class="photo">
+        <p class="day-content">按上方按鈕切換照片與顯示效果。</p>
+    </article>
+</main>
 
 
 </body>
